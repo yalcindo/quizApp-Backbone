@@ -1,0 +1,8 @@
+.show-questions{
+	  outline: 1px solid #aaa;
+    width: 350px;
+    height: 170px;
+    background-color: #fff;
+    float: left;
+    margin: 5px;
+}

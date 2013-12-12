@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Create Your Own Quiz</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+    </head>
+    <body>
+       <!--  <div class="container">
+            
+             <div id="quizes" class="create-div">
+                <h2> Create Quizes</h2>
+                <form id="addquiz" action="#">
+                    <div>
+                        
+                        Quiz Name: <input id="name" type="text" /><br>
+                    
+                        <button id="create" class="btn btn-danger">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+        
+        <div class="container">
+            <div id="add-questions">
+                <form id="question-form" action="#">
+                    <div>
+                        <label for="question">Question </label><input id="question" type="text" />
+                        <label for="num">Number </label><input id="num" type="text" />
+                        <br>
+                     <button id ="add" class="btn btn-default">Add</button>
+                    </div>
+                </form>
+                 
+            </div>
+          <!--   <div class="show-questions">
+                <h3>1<h3>
+                <p> how old are u <p>
+                 <button id="add" class="btn btn-default">Add</button>
+                <button id="delete" class="btn btn-default">Delete</button>
+            </div> -->
+        </div>
+     
+     
+         <script id="questionTemplate" type="text/template">  
+            <p><%= questionName %></p>
+            <h3><%= number %></h3>
+            
+            <button class="btn delete btn-danger">Delete</button>
+        </script>
+
+
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="js/lib/underscore-min.js"></script>
+        <script src="js/lib/backbone-min.js"></script>
+        <script src="js/models/questionModel.js"></script>
+        <script src="js/collections/questionCollection.js"></script>
+        <script src="js/views/questionsView.js"></script>
+        <script src="js/views/questionView.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
